@@ -6,10 +6,12 @@ function Login() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        if(username && password) {const formData = {"username" : username, "password" : password}
-        console.log(formData)
-        setUsername("")
-        setPassword("")}
+        if(username && password) {const formData = {
+            "username" : username, "password" : password}
+            console.log(formData)
+            setUsername("")
+            setPassword("")
+        }
         else {
             alert("Please fill out both input fields!")
         }

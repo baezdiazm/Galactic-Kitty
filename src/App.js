@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 //import { useContext } from 'react'
-import {ApartmentProvider} from "./ApartmentsContext"
+import {UserProvider} from "./UserContext"
 import './App.css';
 import ApartmentListings from "./ApartmentListings"
 import Home from "./Home"
@@ -23,15 +23,17 @@ function App() {
       //console.log(data)
     })  
   },[])
+
+  //Temporary comment outs
   //<ApartmentListings data={homeData}/>
   //<button onClick={handleLoggedIn}>{loggedIn? "Logout" : "Login"}</button>
   return (
     <div className="App">
-      <ApartmentProvider>
+      <UserProvider>
         {loggedIn? <Home /> : <Login />}
         <hr/>
         
-      </ApartmentProvider>
+      </UserProvider>
     </div>
     
   );
