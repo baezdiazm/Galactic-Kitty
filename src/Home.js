@@ -1,7 +1,9 @@
 import React from "react";
+import ApartmentListings from "./ApartmentListings";
 
 function Home() {
-    const homePhoto = "https://ar.rdcpix.com/f080e465c66bdddc91043312d9aba0b6c-f136476264od-w480_h360_x2.jpg"
+    const homePhoto = "https://goldfarbproperties.com/media_cache/userFiles/uploads/Building_Pictures/GRC/carousel-slide/1770.jpg"
+    //<ApartmentListings />
     return (
         <>
             <header className="home">
