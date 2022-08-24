@@ -19,7 +19,7 @@ hr {
   border-radius: 5px;
 }
 
-.header {
+.headers {
   color: rgb(43, 105, 124);
 }
 
@@ -53,4 +53,8 @@ hr {
 .container:hover {
   background-color: rgb(44, 72, 73, 0.9);
   transition: 0.5s;
+}
+
+.nav {
+  display: flex;
 }

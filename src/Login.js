@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { LoggedInContext } from "./UserContext";
 
 function Login() {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
+    const {loggedIn, setLoggedIn} = useContext(LoggedInContext)
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -11,6 +13,7 @@ function Login() {
             console.log(formData)
             setUsername("")
             setPassword("")
+            setLoggedIn(!loggedIn)
         }
         else {
             alert("Please fill out both input fields!")
@@ -26,16 +29,15 @@ function Login() {
         setPassword(e.target.value)
     }
 
-
     return (
         <>
-           <h1>Login!</h1>
+           <h1 className="headers">Login</h1>
            <form className="login-page" >
                 <label>Username: </label>
                 <input type="text" onChange={handleUserChange} value={`${username}`} />
                 <label>Password: </label>
                 <input type="password" onChange={handlePasswordChange} value={`${password}`} />
-                <button type="submit" onClick={handleSubmit}>Submit!</button>
+                <input type="submit" value="Submit" onClick={handleSubmit}/>
            </form>
         </>
     )
