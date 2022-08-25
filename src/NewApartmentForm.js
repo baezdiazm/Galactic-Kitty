@@ -31,7 +31,6 @@ function NewApartmentForm() {
         setName("")
         setAddress("")
         setImage("")
-        console.log(prop.homeData)
     }
 
     return (
