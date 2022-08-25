@@ -35,11 +35,11 @@ function NewApartmentForm() {
     }
 
     return (
-        <div>
-            <h1>
+        <div className="new-form-container">
+            <h1 className="new-from-header">
                 New Apartment
             </h1>
-            <form className="new-form" onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
                 <div>
                     <label>Apartment name: </label>
                     <input type="text" value={name} onChange={handleName}/>

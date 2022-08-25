@@ -19,8 +19,13 @@ hr {
   border-radius: 5px;
 }
 
-.headers {
+.login-container {
+  margin-top: 100px;
+}
+
+.login-header {
   color: rgb(43, 105, 124);
+  margin-bottom: 50px;
 }
 
 .thumbnails {
@@ -28,6 +33,14 @@ hr {
   height: 200px;
   cursor: pointer;
   border-radius: 20px;
+}
+
+.home-container {
+  margin-top: 100px;
+}
+
+.home-header {
+  color: rgb(43, 105, 124);
 }
 
 .home-img {
@@ -83,3 +96,16 @@ label{
   margin-top: 100px;
   margin-bottom: 20px;
 }
+
+.new-form-container {
+  margin-top: 100px;
+}
+
+.new-from-header {
+  color: rgb(43, 105, 124);
+}
+
+.form {
+  margin-top: 100px;
+}
+

@@ -30,8 +30,8 @@ function Login() {
     }
 
     return (
-        <>
-           <h1 className="headers">Login</h1>
+        <div className="login-container">
+           <h1 className="login-header">Login</h1>
            <form className="login-page" >
                 <label>Username: </label>
                 <input type="text" onChange={handleUserChange} value={`${username}`} />
@@ -39,7 +39,7 @@ function Login() {
                 <input type="password" onChange={handlePasswordChange} value={`${password}`} />
                 <input type="submit" value="Submit" onClick={handleSubmit}/>
            </form>
-        </>
+        </div>
     )
 }
 

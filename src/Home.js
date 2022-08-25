@@ -12,14 +12,14 @@ function Home() {
 
     }
     return (
-        <>
-            <header className="home">
+        <div className="home-container">
+            <header className="home-header">
                 <h1 className="headers">Your New Home</h1>
                 <img src={homePhoto} alt={homePhoto} className="home-img"/>
             </header>
             <button className={"Logout"} onClick={loggout}>Log{loggedIn? "out" : "in"}</button>
             {console.log(loggedIn)}
-        </>
+        </div>
     )
 }
 
