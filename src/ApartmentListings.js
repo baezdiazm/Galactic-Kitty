@@ -3,13 +3,16 @@ import ApartmentCard from "./ApartmentCard"
 
 function ApartmentListings({data}) {
     const allAps = data.map((unit) => {
-        return (
-            <ApartmentCard key={unit.name} unit={unit}/>
+    return (
+            <div className="listing" key={unit.name}>
+                <ApartmentCard unit={unit}/>
+            </div>
         )
     })
     
     return (
-        <div>
+        <div className="grid">
+            <h1>Available units</h1>
             {allAps}
         </div>
     )

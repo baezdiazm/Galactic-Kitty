@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ApartmentListings from "./ApartmentListings";
+//import ApartmentListings from "./ApartmentListings";
 import { LoggedInContext } from "./UserContext";
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
     
     function loggout() {
         setLoggedIn(!loggedIn)
+
     }
     return (
         <>
@@ -16,7 +17,7 @@ function Home() {
                 <h1 className="headers">Your New Home</h1>
                 <img src={homePhoto} alt={homePhoto} className="home-img"/>
             </header>
-            <button className={"Logout"} onClick={loggout}>Logout</button>
+            <button className={"Logout"} onClick={loggout}>Log{loggedIn? "out" : "in"}</button>
             {console.log(loggedIn)}
         </>
     )

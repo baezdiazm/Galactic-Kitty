@@ -40,6 +40,7 @@ hr {
   display: block;
   padding: 5px;
   letter-spacing: 2px;
+  font-style:italic;
 }
 
 .container {
@@ -56,5 +57,29 @@ hr {
 }
 
 .nav {
-  display: flex;
+  display: inline-block;
+}
+
+label{
+  width: 140px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.address {
+  font-size: small;
+  font-style: italic;
+}
+
+.listing {
+  display: inline-block;
+}
+
+.submit {
+  margin: 15px;
+}
+
+.grid {
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
