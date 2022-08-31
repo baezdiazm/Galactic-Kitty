@@ -5,7 +5,6 @@ import { LoggedInContext } from "./UserContext";
 
 function NavBar() {
     const context = useContext(LoggedInContext)
-    const logged = context.loggedIn? "" : "login"
 
     const styles = {
         display: "inline-block",
