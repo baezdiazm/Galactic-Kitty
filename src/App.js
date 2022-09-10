@@ -20,7 +20,7 @@ function App() {
   },[])
 
   const [homeData, setHomeData] = useState([])
-  const [loggedIn, setLoggedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(true)
   
   const history = useHistory()
 
@@ -44,7 +44,7 @@ function App() {
             {loggedIn? <ApartmentListings data={homeData}/> : <Redirect to={"/login"}/> }
           </Route>
           <Route to={"/Apartment"}>
-            <Apartment data={homeData}/>
+            {loggedIn? <Apartment data={homeData}/> : <Redirect to={"/Login"} />}
           </Route>
         </Switch>
       </LoggedInContext.Provider>

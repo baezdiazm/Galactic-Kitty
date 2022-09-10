@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { useContext } from "react"
+import React, { useState, useContext } from "react"
+import { useHistory } from "react-router-dom"
 import { LoggedInContext } from "./UserContext"
 
 function NewApartmentForm() {
@@ -7,6 +7,7 @@ function NewApartmentForm() {
     const [name, setName] = useState("")
     const [address, setAddress] = useState("")
     const [image, setImage] = useState("")
+    const history = useHistory()
 
     function handleName(e) {
         setName(e.target.value)
@@ -23,6 +24,7 @@ function NewApartmentForm() {
     function handleSubmit(e) {
         e.preventDefault()
         const newData = {
+            id: prop.homeData.length+1,
             name: name,
             address : address,
             image : image
@@ -31,6 +33,7 @@ function NewApartmentForm() {
         setName("")
         setAddress("")
         setImage("")
+        history.push(`/Apartment/${newData.id}`)
     }
 
     return (

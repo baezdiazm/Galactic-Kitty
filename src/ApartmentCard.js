@@ -1,9 +1,8 @@
-import userEvent from "@testing-library/user-event"
+//import userEvent from "@testing-library/user-event"
 import React from "react"
-import { Link, useRouteMatch } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function ApartmentCard({unit}) {
-    const match = useRouteMatch()
     return (
         <Link to={`/Apartment/${unit.id}`}>
             <div className="container">

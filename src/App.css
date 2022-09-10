@@ -124,3 +124,12 @@ button:hover {
   inset: -2px -2px 5px rgba(255, 255, 255, 1),
   2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+.listing-name {
+  font-size: 50pt;
+  color: rgb(105, 100, 116);
+}
+.listing-image {
+  width: 50%;
+  border-radius: 20px;
+}
