@@ -2,7 +2,6 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 
 function NavBar() {
-//    const context = useContext(LoggedInContext)
 
     const styles = {
         display: "inline-block",
@@ -16,10 +15,11 @@ function NavBar() {
       };
 
     return (
-        <div className="nav">
+        <div className="nav-container">
             <NavLink
                 to="/"
                 exact
+                className="nav"
                 style={styles}
                 activeStyle={{
                     background: "lightblue",
@@ -30,6 +30,7 @@ function NavBar() {
             <NavLink
                 to={`/login`}
                 exact
+                className="nav"
                 style={styles}
                 activeStyle={{
                   background: "lightblue",
@@ -40,6 +41,7 @@ function NavBar() {
             <NavLink
                 to="/NewApartmentForm"
                 exact
+                className="nav"
                 style={styles}
                 activeStyle={{
                   background: "lightblue",

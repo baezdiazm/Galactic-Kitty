@@ -67,9 +67,11 @@ hr {
 .nav {
   display: inline-block;
   border-radius: 20px;
+  border-style: solid;
 }
 
 label{
+  
   width: 140px;
   display: inline-block;
   margin: 5px;
