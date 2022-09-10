@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react"
 import {LoggedInContext} from "./UserContext"
 import './App.css';
-import NavBar from "./NavBar"
-import Home from "./Home"
-import Login from "./Login"
-import Logout from "./Logout"
-import ApartmentListings from "./ApartmentListings";
+import NavBar from "./components/NavBar"
+import Home from "./components/Home"
+import Login from "./components/Login"
+import Logout from "./components/Logout"
+import ApartmentListings from "./components/ApartmentListings";
 import { Redirect, Route, Switch, useHistory } from "react-router-dom";
-import NewApartmentForm from "./NewApartmentForm";
-import Apartment from "./Apartment"
+import NewApartmentForm from "./components/NewApartmentForm";
+import Apartment from "./components/Apartment"
 
 function App() {
   useEffect(() => {

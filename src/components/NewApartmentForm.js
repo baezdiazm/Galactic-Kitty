@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react"
 import { useHistory } from "react-router-dom"
-import { LoggedInContext } from "./UserContext"
+import { LoggedInContext } from "../UserContext"
 
 function NewApartmentForm() {
     const prop = useContext(LoggedInContext)
