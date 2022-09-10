@@ -12,6 +12,7 @@ function NavBar() {
         textDecoration: "none",
         color: "white",
         radius: "10px",
+        visited: "none",
       };
 
     return (
