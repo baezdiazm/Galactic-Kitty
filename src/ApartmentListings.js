@@ -2,9 +2,11 @@ import React from "react";
 import ApartmentCard from "./ApartmentCard"
 
 function ApartmentListings({data}) {
+
+    
     const allAps = data.map((unit) => {
     return (
-            <div className="listing" key={unit.name}>
+            <div className="listing" key={unit.id}>
                 <ApartmentCard unit={unit}/>
             </div>
         )

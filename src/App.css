@@ -10,6 +10,7 @@ body::-webkit-scrollbar {
 
 html {
   background-color: cadetblue;
+  color: rgb(195, 195, 202);
 }
 
 hr {
@@ -20,7 +21,7 @@ hr {
 }
 
 .login-container {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .login-header {
@@ -36,16 +37,12 @@ hr {
 }
 
 .home-container {
-  margin-top: 100px;
-}
-
-.home-header {
-  color: rgb(43, 105, 124);
+  margin-top: 50px;
 }
 
 .home-img {
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   border-radius: 0px;
 }
 
@@ -59,18 +56,17 @@ hr {
 .container {
   margin-top: 20px;
   padding: 20px;
-  display:inline-flex;
-  max-width: fit-content;
   border-radius: 20px;
 }
 
 .container:hover {
   background-color: rgb(44, 72, 73, 0.9);
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .nav {
   display: inline-block;
+  border-radius: 20px;
 }
 
 label{
@@ -93,16 +89,15 @@ label{
 }
 
 .grid {
-  margin-top: 100px;
   margin-bottom: 20px;
 }
 
 .new-form-container {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .new-from-header {
-  color: rgb(43, 105, 124);
+  color: rgb(195, 195, 202);
 }
 
 .form {
@@ -110,17 +105,20 @@ label{
 }
 
 button {
+  margin-top: 25px;
+  transition: 0.5s;
   font-size: 24pt;
   border-radius: 10px;
   border: 2px solid rgb(111, 186, 189);
   background-color: cadetblue;
-  color: white;
+  color: rgb(195, 195, 202);
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 80),
   5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
-  color: red;
+  transition: 0.5s;
+  color: rgb(218, 73, 73);
   box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
   1px 1px 5px rgba(0, 0, 0, 0.3);
   inset: -2px -2px 5px rgba(255, 255, 255, 1),

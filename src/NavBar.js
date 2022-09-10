@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { LoggedInContext } from "./UserContext";
 
 function NavBar() {
-    const context = useContext(LoggedInContext)
+//    const context = useContext(LoggedInContext)
 
     const styles = {
         display: "inline-block",
@@ -37,7 +37,7 @@ function NavBar() {
                   background: "lightblue",
                 }}
             >
-            Log{context.loggedIn? "out" : "in"}
+            Login
             </NavLink>
             <NavLink
                 to="/NewApartmentForm"

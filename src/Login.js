@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
 import { LoggedInContext } from "./UserContext";
+import { useHistory } from "react-router-dom"
 
 function Login() {
+    const history = useHistory()
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const {loggedIn, setLoggedIn} = useContext(LoggedInContext)
@@ -14,6 +16,7 @@ function Login() {
             setUsername("")
             setPassword("")
             setLoggedIn(!loggedIn)
+            history.push(`/`)
         }
         else {
             alert("Please fill out both input fields!")
@@ -22,7 +25,6 @@ function Login() {
 
     function handleUserChange(e) {
         setUsername(e.target.value)
-        console.log(username)
     }
 
     function handlePasswordChange(e) {
