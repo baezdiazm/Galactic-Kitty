@@ -5,6 +5,7 @@
 }
 *:visited {
   color: rgb(195, 195, 202);
+  
 }
 
 body::-webkit-scrollbar {
@@ -140,4 +141,17 @@ button:hover {
 .listing-image {
   width: 50%;
   border-radius: 20px;
+}
+
+.description {
+  display:inline-flex;
+  text-align:justify;
+  width: 50%;
+  color: rgba(21, 75, 122, 0.658);
+  font-size: 20pt;
+}
+.description-h1 {
+  margin-top: 100px;
+  font-size: 30pt;
+  color: rgb(105, 100, 116);
 }
