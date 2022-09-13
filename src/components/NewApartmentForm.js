@@ -33,8 +33,8 @@ function NewApartmentForm() {
         setName("")
         setAddress("")
         setImage("")
-        console.log(newData.id)
-        history.push(`/Apartment/${newData.id}`)
+        console.log(newData)
+        //history.push(`/Apartment/${newData.id}`)
     }
 
     return (
